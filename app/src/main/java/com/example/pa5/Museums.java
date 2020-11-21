@@ -8,27 +8,53 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Museums extends AppCompatActivity {
 
-    private Button museumButtonOne = findViewById(R.id.museumButtonOne);
-    public Button museumButtonTwo = findViewById(R.id.museumButtonTwo);
-    public Button museumButtonThree = findViewById(R.id.museumButtonThree);
-    public Button museumButtonFour = findViewById(R.id.museumButtonFour);
+    private Button museumButtonOne;
+    private Button museumButtonTwo;
+    private Button museumButtonThree;
+    private Button museumButtonFour;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.museums);
 
+        //Set Buttons To Correct ID
+        museumButtonOne = findViewById(R.id.museumButtonOne);
+        museumButtonTwo = findViewById(R.id.museumButtonTwo);
+        museumButtonThree = findViewById(R.id.museumButtonThree);
+        museumButtonFour = findViewById(R.id.museumButtonFour);
+
         museumButtonOne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("HIT THAT BUTTON BITCH");
+                System.out.println("1");
+            }
+        });
+
+        museumButtonTwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("2");
+            }
+        });
+
+        museumButtonThree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("3");
+            }
+        });
+
+        museumButtonFour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("4");
             }
         });
 
 
+
+
+
     }
-
-
-
-
 
 }
