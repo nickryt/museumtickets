@@ -2,10 +2,9 @@ package com.example.pa5;
 
 import android.os.Bundle;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Tickets extends AppCompatActivity {
+public class NJStateMuseum extends AppCompatActivity {
 
 
     public void onCreate(Bundle savedInstanceState) {
