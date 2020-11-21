@@ -1,7 +1,9 @@
 package com.example.pa5;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +23,16 @@ public class NewarkMuseumOfArt extends AppCompatActivity {
 
         name = findViewById(R.id.museumName);
         name.setText(getResources().getText(R.string.museum_two));
+
+        Spinner spinner = (Spinner) findViewById(R.id.seniorSpinner);
+        Spinner spinnerStudent = (Spinner) findViewById(R.id.studentSpinner);
+        Spinner spinnerAdult = (Spinner) findViewById(R.id.adultSpinner);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.tickets_selected, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+        spinnerStudent.setAdapter(adapter);
+        spinnerAdult.setAdapter(adapter);
 
     }
 

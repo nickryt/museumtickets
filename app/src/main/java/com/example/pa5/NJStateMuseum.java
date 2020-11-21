@@ -24,9 +24,14 @@ public class NJStateMuseum extends AppCompatActivity {
         name.setText(getResources().getText(R.string.museum_one));
 
         Spinner spinner = (Spinner) findViewById(R.id.seniorSpinner);
+        Spinner spinnerStudent = (Spinner) findViewById(R.id.studentSpinner);
+        Spinner spinnerAdult = (Spinner) findViewById(R.id.adultSpinner);
+
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.tickets_selected, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
+        spinnerStudent.setAdapter(adapter);
+        spinnerAdult.setAdapter(adapter);
 
     }
 
