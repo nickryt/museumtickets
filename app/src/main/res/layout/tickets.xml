@@ -12,16 +12,18 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/topBarHBox"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:id="@+id/backButton"
+                android:layout_width="106dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_vertical"
                 android:background="@android:color/transparent"
-                android:paddingLeft="10dp"
+                android:paddingLeft="20dp"
                 android:paddingTop="10dp"
                 android:paddingRight="10dp"
                 android:paddingBottom="10dp"
@@ -43,19 +45,23 @@
         <ImageView
             android:id="@+id/museumImage"
             android:layout_width="308dp"
-            android:layout_height="284dp"
+            android:layout_height="283dp"
             android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             app:srcCompat="@drawable/selectmuseum" />
 
         <LinearLayout
+            android:id="@+id/adultHBox"
             android:layout_width="match_parent"
-            android:layout_height="82dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/adultText"
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
+                android:layout_height="40dp"
                 android:layout_weight="1"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="@string/adult"
@@ -64,11 +70,83 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/adultSpinner"
                 android:layout_width="match_parent"
-                android:layout_height="38dp"
-                android:layout_weight="1" />
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
         </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/seniorHBox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seniorText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/senior"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/seniorSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/studentHBox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seniorText2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/student"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/studentSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="286dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/light"
+            android:text="@string/calculate"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </LinearLayout>
