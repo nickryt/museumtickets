@@ -9,7 +9,7 @@ public class NewarkMuseumOfArt extends AppCompatActivity {
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.start);
+        setContentView(R.layout.tickets);
 
 
     }

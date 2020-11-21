@@ -1,5 +1,6 @@
 package com.example.pa5;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +28,9 @@ public class Museums extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 System.out.println("1");
+
+                startActivity(new Intent(Museums.this, NJStateMuseum.class));
+
             }
         });
 
