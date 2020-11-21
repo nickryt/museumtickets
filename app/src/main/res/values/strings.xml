@@ -7,7 +7,8 @@
     <string name="museum_four">Liberty Science Center</string>
 
     <string name="title_tickets">Ticket Price Calculator</string>
-    <string name="image_description">Museum Image</string>
+    <string name="museum_image_description">Museum Image</string>
+    <string name="back_image_description">Back Arrow</string>
 
     <string name="adult">Adult ($25):</string>
     <string name="senior">Senior ($17) :</string>
