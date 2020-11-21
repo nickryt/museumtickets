@@ -6,5 +6,12 @@
     <string name="museum_three">Montclair Art Museum</string>
     <string name="museum_four">Liberty Science Center</string>
 
+    <string name="adult">Adult</string>
+    <string name="senior">Senior</string>
+    <string name="student">Student</string>
+
+    <string name="placeholder">PLACEHOLDER</string>
+
+
 
 </resources>
