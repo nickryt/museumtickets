@@ -60,6 +60,7 @@
         android:layout_height="217dp"
         android:layout_gravity="center_horizontal"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/logo_description"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/selectmuseum" />
 
