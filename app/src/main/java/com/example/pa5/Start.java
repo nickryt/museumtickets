@@ -1,3 +1,9 @@
+/**
+ * This class is the first class loaded upon entering the app, as stated in the Manifest file.
+ * Displays a splash screen with the app logo, and redirects to the main page, 'Museums.java'.
+ * @author Christopher Clemente, Nick Rytelewski
+ */
+
 package com.example.pa5;
 
 import android.content.Intent;

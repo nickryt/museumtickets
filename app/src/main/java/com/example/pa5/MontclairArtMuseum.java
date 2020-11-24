@@ -1,3 +1,8 @@
+/**
+ * This class loads the Montclair Art Museum information into the tickets.xml file
+ * @author Christopher Clemente, Nick Rytelewski
+ */
+
 package com.example.pa5;
 
 import android.content.Intent;

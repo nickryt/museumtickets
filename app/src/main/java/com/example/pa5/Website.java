@@ -1,3 +1,8 @@
+/**
+ * This class redirects users to the website of the museum page that was open prior to clicking the museums image button.
+ * @author Christopher Clemente, Nick Rytelewski
+ */
+
 package com.example.pa5;
 
 import android.content.Intent;

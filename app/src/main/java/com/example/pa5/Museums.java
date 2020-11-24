@@ -1,3 +1,8 @@
+/**
+ * This class contains buttons that the user can select to redirect them to a ticket calculator for the museum they selected.
+ * @author Christopher Clemente, Nick Rytelewski
+ */
+
 package com.example.pa5;
 
 import android.content.Intent;
