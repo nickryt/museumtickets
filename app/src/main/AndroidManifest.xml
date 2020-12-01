@@ -47,11 +47,5 @@
             android:label="NJ State Museum">
         </activity>
 
-        <activity
-            android:name=".Website"
-            android:label="Musuem Website">
-        </activity>
-
     </application>
-
 </manifest>

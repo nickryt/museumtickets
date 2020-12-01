@@ -197,7 +197,6 @@
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:layout_weight="1"
                 android:text="@string/price"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/white"
@@ -206,9 +205,8 @@
 
             <TextView
                 android:id="@+id/price_amount"
-                android:layout_width="273dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="@string/placeholder_money_int"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -227,7 +225,6 @@
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:layout_weight="1"
                 android:text="@string/tax"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/white"
@@ -238,7 +235,6 @@
                 android:id="@+id/tax_amount"
                 android:layout_width="273dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="@string/placeholder_money_double"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
@@ -250,7 +246,7 @@
             android:layout_width="match_parent"
             android:layout_height="106dp"
             android:layout_marginTop="10dp"
-            android:layout_weight="1"
+            android:layout_weight="3"
             android:orientation="horizontal">
 
             <TextView
@@ -258,7 +254,6 @@
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:layout_weight="1"
                 android:text="@string/total"
                 android:textAlignment="viewEnd"
                 android:textColor="@color/white"
@@ -269,7 +264,6 @@
                 android:id="@+id/total_amount"
                 android:layout_width="273dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="@string/placeholder_money_double"
                 android:textColor="@color/white"
                 android:textSize="25sp" />

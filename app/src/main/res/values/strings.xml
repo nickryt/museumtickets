@@ -27,21 +27,26 @@
     <string name="placeholder_money_double">$0.00</string>
     <string name="placeholder_money_int">$0</string>
 
-                <string name="NJSM_adult">Adult ($25) : </string>
-                <string name="NJSM_senior">Senior ($17) : </string>
-                <string name="NJSM_student">Student ($12) : </string>
+    <string name="NJSM_adult">Adult ($25) : </string>
+    <string name="NJSM_senior">Senior ($17) : </string>
+    <string name="NJSM_student">Student ($12) : </string>
 
-                <string name="NMOA_adult">Adult ($20) : </string>
-                <string name="NMOA_senior">Senior ($13) : </string>
-                <string name="NMOA_student">Student ($10) : </string>
+    <string name="NMOA_adult">Adult ($20) : </string>
+    <string name="NMOA_senior">Senior ($13) : </string>
+    <string name="NMOA_student">Student ($10) : </string>
 
-                <string name="MAM_adult">Adult ($22) : </string>
-                <string name="MAM_senior">Senior ($16) : </string>
-                <string name="MAM_student">Student ($14) : </string>
+    <string name="MAM_adult">Adult ($22) : </string>
+    <string name="MAM_senior">Senior ($16) : </string>
+    <string name="MAM_student">Student ($14) : </string>
 
-                <string name="LSC_adult">Adult ($15) : </string>
-                <string name="LSC_senior">Senior ($14) : </string>
-                <string name="LSC_student">Student ($11) : </string>
+    <string name="LSC_adult">Adult ($15) : </string>
+    <string name="LSC_senior">Senior ($14) : </string>
+    <string name="LSC_student">Student ($11) : </string>
+
+    <string name="url_njsm">https://www.state.nj.us/state/museum/</string>
+    <string name="url_nmoa">https://www.newarkmuseumart.org/</string>
+    <string name="url_mam">https://www.montclairartmuseum.org/</string>
+    <string name="url_lsc">https://lsc.org/</string>
 
     <string-array name="tickets_selected">
         <item>0</item>

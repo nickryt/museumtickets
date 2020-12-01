@@ -5,7 +5,9 @@
 
 package com.example.pa5;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -77,11 +79,20 @@ public class NewarkMuseumOfArt extends AppCompatActivity {
         MuseumPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Create a new intent with the current context the website class
-                //Pass the selected museum text as an extra so that the website can be picked in the website class
-                Intent intent = new Intent(getBaseContext(), Website.class);
-                intent.putExtra("SELECTED", "NMOA");
-                startActivity(intent);
+                //Create a new intent to load a new chrome app window
+                //Pass the selected museum text so that the website link can be loaded
+                String urlString = (String) getResources().getText(R.string.url_nmoa);
+                Intent browser = new Intent(Intent.ACTION_VIEW, Uri.parse(urlString));
+                browser.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                browser.setPackage("com.android.chrome");
+                try {
+                    startActivity(browser);
+                }
+                catch (ActivityNotFoundException ex) {
+                    // Chrome browser may not installed ---> Allow user to choose instead
+                    browser.setPackage(null);
+                    startActivity(browser);
+                }
             }
         });
 

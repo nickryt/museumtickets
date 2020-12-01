@@ -32,7 +32,7 @@ public class Start extends AppCompatActivity {
         }, SPLASH_DELAY * 1000);
     }
 
-    //Disable Back Button Functionality
+    //Disable Back Button Functionality When Loading Splash Screen
     @Override
     public void onBackPressed(){
     }
